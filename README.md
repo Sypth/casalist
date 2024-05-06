@@ -17,17 +17,25 @@ Before setting up the project, make sure you have the following prerequisites in
 
 Follow these steps and run the provided commands to set up the project:
 ```bash
-# Step 1: Installing Vite and Vue using CMD Terminal
+# Step 1: Installing Vite and Vue
 1. Open the project on the available code editor e.g VsCode
 2. On the VsCode terminal, run this command: npm install --save-dev vue @vitejs/plugin-vue
 3. Once the installation is complete, open 'vite.config.js' file to add vue to the plugins.
-Just copy and paste this inside the plugins next to the laravel plugin:
-    `vue({
+Just copy and paste this inside the plugins next to the laravel plugin if it's not exist:
+    "vue({
             template: {
                 base: null,
                 includeAbsolute: false
             }
-        })`
+        })"
+4. To run Vue locally using Vite, run this command in the terminal:
+    npm run dev
 
+# Step 2: Installing Inertia JS
+1. On the Vs Code terminal, run this commands:
+    -   composer require inertiajs/inertia-laravel
+    -   npm install @inertiajs/vue3
+
+    For the full guide on how to setup Inertia: https://inertiajs.com/client-side-setup
 ```
 
