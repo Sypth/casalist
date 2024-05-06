@@ -22,12 +22,12 @@ Follow these steps and run the provided commands to set up the project:
 2. On the VsCode terminal, run this command: npm install --save-dev vue @vitejs/plugin-vue
 3. Once the installation is complete, open 'vite.config.js' file to add vue to the plugins.
 Just copy and paste this inside the plugins next to the laravel plugin:
-    ```vue({
+    `vue({
             template: {
                 base: null,
                 includeAbsolute: false
             }
-        })```
+        })`
 
 ```
 
