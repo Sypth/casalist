@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ListingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +17,9 @@ use App\Http\Controllers\IndexController;
 */
 
 
+
+
 route::get('/', [IndexController::class, 'index']);
 route::get('/hello', [IndexController::class, 'show']);
+
+route::resource('listing', ListingController::class)->only(['index', 'show']);
