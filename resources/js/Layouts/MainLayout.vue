@@ -1,15 +1,32 @@
 <template>
     <Link href="/">Main Page</Link>&nbsp;
-    <Link href="/hello">Show Page</Link>
-    <div>The page with time {{ timer }}</div>
+    <Link href="/hello">Show Page</Link>&nbsp;
+    <Link href="/listing">Listing Page</Link>
+    <!-- <div>The page with time {{ timer }}</div> -->
+
+    <!-- <div v-if="flashSuccess !== null && typeof flashSuccess !== 'undefined'" class="success">asd</div> -->
+    <div v-if="$page.props.flash.success" class="success">
+        {{ $page.props.flash.success }}
+    </div>
 
     <slot>Default</slot>
 </template>
 
 <script setup>
-import { Link } from "@inertiajs/vue3";
-import { ref } from "vue";
+// import { computed } from "vue";
+import { Link, usePage } from "@inertiajs/vue3";
+// page.props.value.flash.success
+// const
+// const flashSuccess = $page.props.flash.success;
+// import { ref } from "vue";
 
-const timer = ref(0);
-setInterval(() => timer.value++, 1000);
+// const timer = ref(0);
+// setInterval(() => timer.value++, 1000);
 </script>
+
+<style scoped>
+.success {
+    background-color: green;
+    color: white;
+}
+</style>

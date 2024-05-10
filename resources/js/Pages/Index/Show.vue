@@ -1,6 +1,6 @@
 <template>
     <div>Show</div>
-    <Link href="/">Main Page</Link>
+    <div>This is the SHOW page</div>
 </template>
 
 <script setup>
