@@ -1,7 +1,6 @@
 <template>
-    <Link href="/">Main Page</Link>&nbsp;
-    <Link href="/hello">Show Page</Link>&nbsp;
-    <Link href="/listing">Listing Page</Link>
+    <Link :href="route('listing.index')">Listing</Link>&nbsp;
+    <Link :href="route('listing.create')">New Listing</Link>
     <!-- <div>The page with time {{ timer }}</div> -->
 
     <!-- <div v-if="flashSuccess !== null && typeof flashSuccess !== 'undefined'" class="success">asd</div> -->
@@ -14,7 +13,7 @@
 
 <script setup>
 // import { computed } from "vue";
-import { Link, usePage } from "@inertiajs/vue3";
+import { Link } from "@inertiajs/vue3";
 // page.props.value.flash.success
 // const
 // const flashSuccess = $page.props.flash.success;
