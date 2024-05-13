@@ -45,6 +45,9 @@ Just copy and paste this inside the plugins next to the laravel plugin if it's n
 
 # Adding Laravel IDE Helper (Optional)
     Full Guide: https://github.com/barryvdh/laravel-ide-helper#installation
+
+# Install Ziggy
+    terminal command: composer require tightenco/ziggy
 ```
 
 ## Useful Commands
