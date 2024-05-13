@@ -7,6 +7,7 @@
         <title>CasaList</title>
 
         {{-- Customize directives --}}
+        @routes
         @vite('resources/js/app.js')
         @inertiaHead
     </head>

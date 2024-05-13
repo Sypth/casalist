@@ -22,4 +22,4 @@ use App\Http\Controllers\ListingController;
 route::get('/', [IndexController::class, 'index']);
 route::get('/hello', [IndexController::class, 'show']);
 
-route::resource('listing', ListingController::class)->only(['index', 'show', 'create', 'store']);
+route::resource('listing', ListingController::class);
